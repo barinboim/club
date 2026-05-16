@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Заявка на фестиваль фестивалей</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -812,14 +813,96 @@
   .hidden { display: none !important; }
 
   @media (max-width: 640px) {
-    .paper { margin: 16px; padding: 36px 24px 60px; }
-    .header .title { font-size: 22px; }
-    .intro-hero { font-size: 22px; }
+    body { font-size: 14px; }
+
+    .paper {
+      margin: 0 auto;
+      padding: 48px 18px 56px;
+    }
+    .corner-stamp { font-size: 8.5px; letter-spacing: 0.5px; }
+    .corner-stamp.tl, .corner-stamp.tr { top: 12px; }
+    .corner-stamp.bl, .corner-stamp.br { bottom: 12px; }
+    .corner-stamp.tl, .corner-stamp.bl { left: 14px; }
+    .corner-stamp.tr, .corner-stamp.br { right: 14px; }
+
+    .header { padding: 12px 0; margin-bottom: 18px; }
+    .header .ministry { font-size: 9px; letter-spacing: 2px; }
+    .header .title { font-size: 22px; letter-spacing: 0.5px; }
+    .header .subtitle { font-size: 9.5px; letter-spacing: 1px; }
+    .header .form-no { font-size: 9px; }
+
+    .intro-hero { font-size: 24px; margin: 22px 0 16px; }
+    .intro-body { font-size: 15px; line-height: 1.7; padding: 0; }
+    .intro-body p { margin: 12px 0; }
+
+    .step-counter { font-size: 10px; letter-spacing: 1px; }
+    .step h2 { font-size: 20px; }
+    .step .hint { font-size: 13px; margin-bottom: 14px; }
+
+    .options label, .options button { font-size: 14px; padding: 12px 14px; }
+    .akar-select { font-size: 14px; padding: 14px; }
+    .slider-value { font-size: 20px; }
+    .readonly-field { font-size: 14px; }
+    .fio-input { font-size: 16px; padding: 14px; }
+    .danger-btn { font-size: 13px; padding: 14px; letter-spacing: 1.5px; }
+    .btn-next { font-size: 12.5px; padding: 16px 14px; letter-spacing: 2px; }
+    .sys-response { font-size: 13px; padding: 12px; }
+    .source-citation { font-size: 12.5px; }
+
+    /* Membership card */
+    .card-screen { padding: 24px 12px 60px; }
+    .card-outer { padding: 10px; }
+    .card { padding: 18px 16px 10px; }
+    .card-top-strip { font-size: 8.5px; }
+    .card-header { margin-bottom: 14px; }
+    .card-header .crest { font-size: 18px; letter-spacing: 1px; }
+    .card-header .sub { font-size: 8.5px; letter-spacing: 2px; }
+    .card-header .ornament { font-size: 11px; letter-spacing: 6px; }
+
+    .card-body { grid-template-columns: 84px 1fr; gap: 14px; }
+    .photo-wrap { width: 84px; height: 108px; }
+
+    .card-field { margin-bottom: 10px; }
+    .card-field .lbl { font-size: 8.5px; }
+    .card-field .val { font-size: 12px; }
+    .card-field .val.small { font-size: 11px; }
+    .card-field .val.nowrap {
+      white-space: normal;
+      font-size: 11px;
+      line-height: 1.35;
+    }
+
+    .card-footer { margin-top: 16px; padding-top: 10px; gap: 8px; }
+    .signature { width: 92px; }
+    .signature-label { font-size: 8px; }
+    .club-stamp { width: 74px; height: 74px; font-size: 6.5px; }
+    .card-bottom-strip { font-size: 8px; letter-spacing: 1px; }
+
+    .birthday-message { padding: 22px 18px; margin-top: 24px; }
+    .birthday-message h3 { font-size: 22px; }
+    .birthday-message p { font-size: 14px; }
+    .birthday-message .ceremonial { font-size: 12.5px; }
+
+    .stamp-overlay .stamp { font-size: 32px; padding: 12px 22px; letter-spacing: 6px; border-width: 4px; }
+
+    .pamagite-wrap { bottom: 14px; right: 14px; }
+    .pamagite-btn { font-size: 10px; padding: 8px 12px; letter-spacing: 1px; }
+    .pamagite-tooltip { width: 240px; font-size: 11.5px; }
+  }
+
+  @media (max-width: 380px) {
+    .paper { padding: 42px 14px 48px; }
+    .header .title { font-size: 19px; }
+    .intro-hero { font-size: 21px; }
     .step h2 { font-size: 18px; }
-    .card-body { grid-template-columns: 90px 1fr; gap: 14px; }
-    .photo-wrap { width: 90px; height: 115px; }
-    .stamp-overlay .stamp { font-size: 36px; padding: 12px 24px; }
-    .pamagite-tooltip { width: 220px; }
+    .options label, .options button { font-size: 13.5px; }
+    .card-body { grid-template-columns: 72px 1fr; gap: 12px; }
+    .photo-wrap { width: 72px; height: 92px; }
+    .card-header .crest { font-size: 16px; }
+    .card-field .val { font-size: 11.5px; }
+    .card-field .val.nowrap { font-size: 10px; }
+    .club-stamp { width: 66px; height: 66px; font-size: 6px; }
+    .signature { width: 82px; }
   }
 </style>
 </head>
